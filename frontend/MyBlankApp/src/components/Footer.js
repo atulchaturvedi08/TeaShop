@@ -29,7 +29,7 @@ const Footer = () => {
       </TouchableOpacity>
       <TouchableOpacity style={{ alignItems: 'center' }}>
         <Icon name="person" size={24} /> {/* Fixed the icon name */}
-        <Text style={{ fontSize: 10 }}>Win a Car</Text>
+        <Text style={{ fontSize: 10 }}>Profile</Text>
       </TouchableOpacity>
     </View>
   );

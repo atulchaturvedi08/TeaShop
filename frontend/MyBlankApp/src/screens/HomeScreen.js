@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { View, ScrollView } from 'react-native';
 import Voice from '@react-native-voice/voice';
 
-import Header from '../components/Header';
+// import Header from '../components/Header';
 import SearchBar from '../components/SearchBar';
 import TrendingBrands from '../components/TrendingBrands';
 import BannerAd from '../components/BannerAd';
@@ -67,15 +67,16 @@ export default function HomeScreen() {
 
   return (
     <View style={{ flex: 1, backgroundColor: '#fff' }}>
-      <ScrollView contentContainerStyle={{ paddingBottom: 60 }}>
-        <Header />
-        <SearchBar
+      <SearchBar
           searchText={searchText}
           setSearchText={setSearchText}
           isListening={isListening}
           startListening={startListening}
           stopListening={stopListening}
         />
+      <ScrollView contentContainerStyle={{ paddingBottom: 60 }}>
+        {/* <Header /> */}
+        
         <BannerAd />
         <TrendingBrands brands={brands} />
         <ShopByCategory />

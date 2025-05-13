@@ -13,7 +13,7 @@ import {
 const orderAgainProducts = [
   {
     id: '1',
-    name: 'Cutting Chai - Desi Style',
+    name: 'Cutting Chai -S Desi Style',
     image: 'https://your-backend.com/images/chai.png',
     price: 10,
     originalPrice: 12,
@@ -140,7 +140,7 @@ const ProductCard = ({ item }) => (
     <View style={styles.bottomRow}>
       <Text style={styles.deliveryTime}>⏱ {item.delivery}</Text>
       <TouchableOpacity style={styles.addButton}>
-        <Text style={{ fontSize: 20, color: 'green' }}>+</Text>
+        <Text style={{ fontSize: 18, color: 'green', textAlign: 'center' }}>+</Text>
       </TouchableOpacity>
     </View>
   </View>
@@ -260,16 +260,21 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   deliveryTime: {
-    fontSize: 11,
+    fontSize: 15,
     color: 'green',
   },
   addButton: {
     borderWidth: 1,
     borderColor: 'green',
-    width: 24,
-    height: 24,
-    borderRadius: 12,
+    width: 26, 
+    height: 26,
+    borderRadius: 18, 
     justifyContent: 'center',
-    alignItems: 'center',
+    alignItems: 'center', 
+    backgroundColor: '#fff', 
+    elevation: 2, 
+    shadowColor: '#000',
+    shadowOpacity: 0.1,
+    shadowRadius: 4,
   },
 });
