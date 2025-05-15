@@ -12,7 +12,7 @@ import {
   Animated,
 } from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
-import { useNavigation } from '@react-navigation/native'; // ✅ ye missing tha
+import { useNavigation } from '@react-navigation/native'; 
 
 
 
@@ -20,7 +20,7 @@ const ProfileScreen = () => {
   const navigation = useNavigation();
 
   const user = {
-    name: 'Rahul Chaudhary',
+    name: 'Atul Chaturvedi',
     phone: '9760095759',
   };
 
@@ -34,7 +34,6 @@ const ProfileScreen = () => {
     { id: '1', title: 'Save for later', icon: 'bookmark-outline' },
     { id: '2', title: 'Saved Payments', icon: 'credit-card-outline' },
     { id: '3', title: 'Ratings & Reviews', icon: 'star-outline' },
-    { id: '4', title: 'NeuPass', icon: 'ticket-percent-outline' },
     { id: '5', title: 'Support', icon: 'lifebuoy' },
     { id: '6', title: 'My Gift Cards', icon: 'gift-outline' },
     { id: '7', title: 'Notifications', icon: 'bell-outline' },
@@ -102,7 +101,19 @@ const ProfileScreen = () => {
           <TouchableOpacity
             key={item.id}
             style={styles.menuItem}
-            onPress={() => alert(item.title)}
+            onPress={() => {
+              if (item.title === 'Ratings & Reviews') {
+                navigation.navigate('RatingsReviews');
+              } else if (item.title === 'Support') {
+                navigation.navigate('Support');
+              } else if (item.title === 'My Gift Cards') {
+                navigation.navigate('GiftCard');
+              } else if (item.title === 'Notifications') {
+                navigation.navigate('Notifications');
+              } else {
+                alert(item.title);
+              }
+            }}
           >
             <Icon name={item.icon} size={22} color="#444" />
             <Text style={styles.menuText}>{item.title}</Text>

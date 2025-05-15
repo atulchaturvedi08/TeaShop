@@ -6,7 +6,6 @@ import {
   StyleSheet,
   TouchableOpacity,
   Alert,
-  Image,
   ScrollView,
   KeyboardAvoidingView,
   Platform,
@@ -16,44 +15,21 @@ const EditProfile = () => {
   const [formData, setFormData] = useState({
     name: '',
     phone: '',
-    email: '', // Add email field
+    email: '',
   });
 
   const handleChange = (key, value) => {
     setFormData({ ...formData, [key]: value });
   };
 
-  const handleSubmit = async () => {
-    // Validation: check if any field is empty
+  const handleSubmit = () => {
+    console.log('Save Changes pressed', formData);
     if (!formData.name || !formData.email || !formData.phone) {
       Alert.alert('Error', 'Please fill all fields.');
       return;
     }
 
-    try {
-      const form = new FormData();
-      form.append('name', formData.name);
-      form.append('phone', formData.phone);
-      form.append('email', formData.email); // Add email to form
-
-      // Since no image upload, we skip profile_image from FormData
-
-      const response = await fetch('https://yourapi.com/upload-profile', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'multipart/form-data',
-        },
-        body: form,
-      });
-
-      if (response.ok) {
-        Alert.alert('Profile Updated', 'Your profile has been updated!');
-      } else {
-        Alert.alert('Error', 'Failed to update profile.');
-      }
-    } catch (error) {
-      Alert.alert('Error', error.message);
-    }
+    Alert.alert('Profile Updated', 'Your profile has been updated!');
   };
 
   return (
@@ -120,16 +96,6 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     textAlign: 'center',
     marginBottom: 20,
-  },
-  imageContainer: {
-    alignItems: 'center',
-    marginBottom: 20,
-  },
-  profileImage: {
-    width: 150,
-    height: 150,
-    borderRadius: 75,
-    backgroundColor: '#ccc',
   },
   formGroup: {
     marginBottom: 15,

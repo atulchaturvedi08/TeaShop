@@ -8,6 +8,10 @@ import ProductDetailsScreen from '../src/screens/ProductDetailsScreen';
 import ProductListScreen from '../src/screens/ProductListScreen';
 import ProfileScreen from '../src/screens/Profile/ProfleScreen';
 import EditProfile from '../src/components/EditProfile';
+import Support from '../src/components/Support';
+import GiftCard from '../src/components/GiftCard';
+import Notifications from '../src/components/Notifications';
+import RatingsReviews from '../src/components/RatingsReviews';
 
 const Stack = createStackNavigator();
 
@@ -22,6 +26,10 @@ const AppNavigator = () => {
       <Stack.Screen name='ProductDetailsScreen' component={ProductDetailsScreen} />
       <Stack.Screen name='ProfileScreen' component={ProfileScreen} />
       <Stack.Screen name='EditProfile' component={EditProfile} />
+      <Stack.Screen name='Support' component={Support} />
+      <Stack.Screen name='GiftCard' component={GiftCard} />
+      <Stack.Screen name='Notifications' component={Notifications} />
+      <Stack.Screen name='RatingsReviews' component={RatingsReviews} />
     </Stack.Navigator>
   );
 };
