@@ -1,3 +1,5 @@
+// ✅ ProfleScreen.js (Corrected)
+
 import React, { useRef, useEffect } from 'react';
 import {
   View,
@@ -10,10 +12,11 @@ import {
   Animated,
 } from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
-import EditProfile from '../components/EditProfile'; // Imported component
+import { useNavigation } from '@react-navigation/native'; // ✅ ye missing tha
 
-// Rename the local function to avoid conflict
-const EditProfile = () => {
+
+
+const ProfileScreen = () => {
   const navigation = useNavigation();
 
   const user = {
@@ -47,7 +50,6 @@ const EditProfile = () => {
   const logoutButtonOpacity = useRef(new Animated.Value(0)).current;
 
   useEffect(() => {
-    // Animate logout button (fade-in effect)
     Animated.timing(logoutButtonOpacity, {
       toValue: 1,
       duration: 1000,
