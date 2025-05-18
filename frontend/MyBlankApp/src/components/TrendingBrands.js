@@ -37,7 +37,7 @@ const styles = StyleSheet.create({
     width: 60,
     height: 60,
     borderRadius: 30,
-    backgroundColor: '#FFD1DC',
+    backgroundColor: 'white',
     justifyContent: 'center',
     alignItems: 'center',
   },
@@ -47,7 +47,7 @@ const styles = StyleSheet.create({
     resizeMode: 'contain',
   },
   brandName: {
-    fontSize: 10,
+    fontSize: 13,
     marginTop: 5,
     textAlign: 'center',
   },

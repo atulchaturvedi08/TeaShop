@@ -14,7 +14,7 @@ const orderAgainProducts = [
   {
     id: '1',
     name: 'Cutting Chai -S Desi Style',
-    image: 'https://your-backend.com/images/chai.png',
+    image: 'https://cdn-icons-png.flaticon.com/512/415/415733.png', // Tea cup
     price: 10,
     originalPrice: 12,
     discount: '15% OFF',
@@ -24,7 +24,7 @@ const orderAgainProducts = [
   {
     id: '2',
     name: 'Parle-G Biscuits - Classic',
-    image: 'https://your-backend.com/images/parle-g.png',
+    image: 'https://cdn-icons-png.flaticon.com/512/1046/1046876.png', // Biscuits
     price: 5,
     originalPrice: 5,
     discount: '40% OFF',
@@ -34,7 +34,7 @@ const orderAgainProducts = [
   {
     id: '3',
     name: 'Parle-G Biscuits - Classic',
-    image: 'https://your-backend.com/images/parle-g.png',
+    image: 'https://cdn-icons-png.flaticon.com/512/1046/1046876.png', // Biscuits
     price: 5,
     originalPrice: 5,
     discount: '90% OFF',
@@ -44,7 +44,7 @@ const orderAgainProducts = [
   {
     id: '4',
     name: 'Parle-G Biscuits - Classic',
-    image: 'https://your-backend.com/images/parle-g.png',
+    image: 'https://cdn-icons-png.flaticon.com/512/1046/1046876.png', // Biscuits
     price: 5,
     originalPrice: 5,
     discount: '60% OFF',
@@ -58,7 +58,7 @@ const categoryProducts = [
   {
     id: '3',
     name: 'Kurkure Masala Munch',
-    image: 'https://your-backend.com/images/kurkure.png',
+    image: 'https://cdn-icons-png.flaticon.com/512/3075/3075977.png', // Chips
     price: 10,
     originalPrice: 12,
     discount: '10% OFF',
@@ -68,7 +68,7 @@ const categoryProducts = [
   {
     id: '4',
     name: 'Maggi Noodles - Masala',
-    image: 'https://your-backend.com/images/maggi.png',
+    image: 'https://cdn-icons-png.flaticon.com/512/616/616408.png', // Noodles
     price: 14,
     originalPrice: 15,
     discount: '5% OFF',
@@ -78,7 +78,7 @@ const categoryProducts = [
   {
     id: '5',
     name: 'Lay’s Chips - Classic Salted',
-    image: 'https://your-backend.com/images/lays.png',
+    image: 'https://cdn-icons-png.flaticon.com/512/135/135620.png', // Chips
     price: 20,
     originalPrice: 20,
     discount: '',
@@ -88,7 +88,7 @@ const categoryProducts = [
   {
     id: '6',
     name: 'Bun Maska',
-    image: 'https://your-backend.com/images/bunmaska.png',
+    image: 'https://cdn-icons-png.flaticon.com/512/1046/1046857.png', // Bun
     price: 15,
     originalPrice: 18,
     discount: '10% OFF',
@@ -102,7 +102,7 @@ const recommendedProducts = [
   {
     id: '7',
     name: 'Hot Samosa',
-    image: 'https://your-backend.com/images/samosa.png',
+    image: 'https://cdn-icons-png.flaticon.com/512/3075/3075977.png', // Samosa
     price: 12,
     originalPrice: 15,
     discount: '20% OFF',
@@ -112,7 +112,7 @@ const recommendedProducts = [
   {
     id: '8',
     name: 'Cigarettes - Classic Milds',
-    image: 'https://your-backend.com/images/cigarette.png',
+    image: 'https://cdn-icons-png.flaticon.com/512/2933/2933887.png', // Cigarette
     price: 150,
     originalPrice: 160,
     discount: '6% OFF',

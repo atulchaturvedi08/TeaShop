@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from 'react';
-import { View, ScrollView, Dimensions, Text } from 'react-native';
+import { View, ScrollView, Dimensions, Text, Image } from 'react-native';
 
 const banners = [
-  '600 * 200',
-  '600 * 200',
-  '600 * 200',
+  'https://cdn-icons-png.flaticon.com/512/415/415733.png', // Tea cup icon (Tea Shop)
+  'https://cdn-icons-png.flaticon.com/512/1046/1046876.png',
+  'https://cdn-icons-png.flaticon.com/512/616/616408.png',
+  'https://cdn-icons-png.flaticon.com/512/135/135620.png',
+  'https://cdn-icons-png.flaticon.com/512/3075/3075977.png',
 ];
 
 const BannerAd = () => {
@@ -33,12 +35,15 @@ const BannerAd = () => {
             style={{
               width: screenWidth,
               height: 200,
-              backgroundColor: 'lightgray', // Gray color
+              backgroundColor: 'lightgray',
               justifyContent: 'center',
               alignItems: 'center',
             }}
           >
-            <Text style={{ fontSize: 20, color: 'black' }}>{banner}</Text>
+            <Image
+              source={{ uri: banner }}
+              style={{ width: 180, height: 180, resizeMode: 'contain' }}
+            />
           </View>
         ))}
       </ScrollView>

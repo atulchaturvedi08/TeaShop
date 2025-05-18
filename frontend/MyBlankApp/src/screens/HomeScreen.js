@@ -10,14 +10,14 @@ import Footer from '../components/Footer';
 import ShopByCategory from '../components/ShopByCategory';
 
 const brands = [
-  { id: '1', name: 'Milk', logo: 'https://your-backend.com/images/perfora.png' },
-  { id: '2', name: 'Perfora', logo: 'https://your-backend.com/images/perfora.png' },
-  { id: '3', name: 'Tomato', logo: 'https://your-backend.com/images/perfora.png' },
-  { id: '4', name: 'Boat', logo: 'https://your-backend.com/images/perfora.png' },
-  { id: '5', name: 'Tea', logo: 'https://your-backend.com/images/perfora.png' },
-  { id: '6', name: 'Poha', logo: 'https://your-backend.com/images/perfora.png' },
-  { id: '7', name: 'Breakfast', logo: 'https://your-backend.com/images/perfora.png' },
-  { id: '8', name: 'Sigret', logo: 'https://your-backend.com/images/perfora.png' },
+  { id: '1', name: 'Milk', logo: 'https://cdn-icons-png.flaticon.com/512/1046/1046876.png' },      // Milk
+  { id: '2', name: 'Perfora', logo: 'https://cdn-icons-png.flaticon.com/512/616/616408.png' },     // Toothbrush
+  { id: '3', name: 'Tomato', logo: 'https://cdn-icons-png.flaticon.com/512/135/135620.png' },      // Tomato
+  { id: '4', name: 'Boat', logo: 'https://cdn-icons-png.flaticon.com/512/616/616494.png' },        // Boat
+  { id: '5', name: 'Tea', logo: 'https://cdn-icons-png.flaticon.com/512/415/415733.png' },         // Tea
+  { id: '6', name: 'Poha', logo: 'https://cdn-icons-png.flaticon.com/512/3075/3075977.png' },      // Bowl
+  { id: '7', name: 'Breakfast', logo: 'https://cdn-icons-png.flaticon.com/512/1046/1046857.png' }, // Breakfast
+  { id: '8', name: 'Sigret', logo: 'https://cdn-icons-png.flaticon.com/512/2933/2933887.png' },    // Cigarette
   // ... other brands
 ];
 

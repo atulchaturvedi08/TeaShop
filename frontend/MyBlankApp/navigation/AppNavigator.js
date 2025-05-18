@@ -12,12 +12,14 @@ import Support from '../src/components/Support';
 import GiftCard from '../src/components/GiftCard';
 import Notifications from '../src/components/Notifications';
 import RatingsReviews from '../src/components/RatingsReviews';
+import CartScreen from '../src/screens/Cart/CartScreen';
+import CategoriesScreen from '../src/screens/Categories/CategoriesScreen';
 
 const Stack = createStackNavigator();
 
 const AppNavigator = () => {
   return (
-    <Stack.Navigator initialRouteName="ProfileScreen">
+    <Stack.Navigator initialRouteName="HomeScreen">
       <Stack.Screen name="LoginScreen" component={LoginScreen} />
       <Stack.Screen name="ForgotPasswordScreen" component={ForgotPasswordScreen} />
       <Stack.Screen name='HomeScreen' component={HomeScreen} />
@@ -30,6 +32,9 @@ const AppNavigator = () => {
       <Stack.Screen name='GiftCard' component={GiftCard} />
       <Stack.Screen name='Notifications' component={Notifications} />
       <Stack.Screen name='RatingsReviews' component={RatingsReviews} />
+      <Stack.Screen name='CartScreen' component={CartScreen} />
+      <Stack.Screen name='CategoriesScreen' component={CategoriesScreen} />
+      {/* Add more screens as needed */}
     </Stack.Navigator>
   );
 };
